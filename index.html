@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent_container">
+      <div class="title">
+        <h1>Javascript Developer Quiz</h1>
+        <div class="Quiz-result">
+          <p>You are <span class="quiz-percent"></span> Great Developer</p>
+        </div>
+      </div>
+      <div class="quiz_container">
+        <div class="quiz-title">
+          <h5>On With the Question...</h5>
+          <div class="AddQueBtn">
+            <button class="NewQuestioBtn">Add New Question</button>
+            <button onclick="ResetAll()">Reset Answer</button>
+          </div>
+        </div>
+        <div class="quiz-content">
+          <form class="quiz-form">
+            <div class="quiz-question-container">
+              <p class="quiz-question">Q1.What is Javascript ?</p>
+              <div class="quiz-option">
+                <input type="radio" name="Q1" value="A" />
+                <label class="option-text">A Programming Language</label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="Q1" value="B" />
+                <label class="option-text">A Scripting Language</label>
+              </div>
+            </div>
+
+            <div class="quiz-question-container">
+              <p class="quiz-question">Q2.What is Javascript Used For?</p>
+              <div class="quiz-option">
+                <input type="radio" name="Q2" value="A" />
+                <label class="option-text">Web Development</label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="Q2" value="B" />
+                <label class="option-text">BlockChain Developemnt</label>
+              </div>
+            </div>
+
+            <div class="quiz-question-container">
+              <p class="quiz-question">
+                Q3.What is var Keyword in Javascript Used For?
+              </p>
+              <div class="quiz-option">
+                <input type="radio" name="Q3" value="A" />
+                <label class="option-text">To define a variable.</label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="Q3" value="B" />
+                <label class="option-text">To define a Functon.</label>
+              </div>
+            </div>
+
+            <div class="quiz-question-container">
+              <p class="quiz-question">Q4.What is arrays in Javascript?</p>
+              <div class="quiz-option">
+                <input type="radio" name="Q4" value="A" />
+                <label class="option-text">Data Structure</label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="Q4" value="B" />
+                <label class="option-text">Non-Primitive Data type</label>
+              </div>
+            </div>
+
+            <div class="quiz-question-container">
+              <p class="quiz-question">Q5.What is React ?</p>
+              <div class="quiz-option">
+                <input type="radio" name="Q5" value="A" />
+                <label class="option-text">FrameWork Of Javascript</label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="Q5" value="B" />
+                <label class="option-text">Library of Javascript</label>
+              </div>
+            </div>
+
+            <div class="submit-btn">
+              <button type="submit" class="submit">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal to Add Question -->
+    <div class="Model-container d-none">
+      <form class="form">
+        <div class="Add-question-text">
+          <label class="question-text">Type Question</label>
+          <input type="text" name="" placeholder="type Question here" />
+        </div>
+        <div class="Add-Option-text">
+          <label class="option-text">Add Option 1</label>
+          <input type="text" name="" placeholder="add option here" />
+        </div>
+        <div class="Add-Option-text">
+          <label class="option-text">Add Option 2</label>
+          <input type="text" name="" placeholder="add option here" />
+        </div>
+        <div class="Add-CorrectOption-text">
+          <label class="Correctoption-text">Add Correct Option</label>
+          <input type="text" name="" placeholder="add correct option here" />
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+
+    <script src="App.js"></script>
+  </body>
+</html>
