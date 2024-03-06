@@ -32,11 +32,11 @@ form.addEventListener("submit", (e) => {
   },10000);
 });
 
-// function ResetAll() {
-//   Result.querySelector("span").innerText = `0%`;
-// }
-// NewQue.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   const Modal = document.querySelector(".Modal-container");
+function ResetAll() {
+  Result.querySelector("span").innerText = `0%`;
+}
+NewQue.addEventListener("click", (e) => {
+  e.preventDefault();
+  const Modal = document.querySelector(".Modal-container");
   
-// });
+});
